@@ -1,14 +1,23 @@
+/* Header e Navbar */
 header {
-    text-align: center; /* centraliza o h1 e a navbar */
+    text-align: center;
 }
 
 nav a {
-    text-decoration: none; /* remove sublinhado */
-    margin: 0 10px;        /* espaço entre links */
+    text-decoration: none;
+    margin: 0 10px;
     color: #333;
     font-weight: bold;
 }
 
+/* Imagem centralizada */
+.imagem-central {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+}
+
+/* Layout da página */
 html, body {
     height: 100%;
     margin: 0;
@@ -21,12 +30,32 @@ body {
 
 main {
     flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+section {
+    margin-bottom: 30px;
+}
+
+/* Footer */
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 5px 0;
-    
+}
+
+/* Comentários fictícios */
+#comentarios {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.comentario {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
