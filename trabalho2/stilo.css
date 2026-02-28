@@ -1,0 +1,32 @@
+header {
+    text-align: center; /* centraliza o h1 e a navbar */
+}
+
+nav a {
+    text-decoration: none; /* remove sublinhado */
+    margin: 0 10px;        /* espaço entre links */
+    color: #333;
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    
+}
