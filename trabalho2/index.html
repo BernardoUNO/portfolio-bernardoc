@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Bernardo</title>
+    <link rel="stylesheet" href="stilo.css">
 </head>
 <body>
 
@@ -15,7 +16,6 @@
             <a href="#">Sobre</a> |
             <a href="#">Contato</a>
         </nav>
-        <link rel="stylesheet" href="stilo.css">
     </header>
 
     <!-- Conteúdo principal -->
@@ -33,13 +33,14 @@
         <!-- Meus Estudos -->
         <section>
             <h2>Meus Estudos</h2>
-            <img src="estudante.jpg" alt="Exemplo de estudante" style="display:block; margin:auto; max-width:200px;">
+            <img src="estudante.jpg" alt="Exemplo de estudante" class="imagem-central">
             <p>
                 Sou estudante de Sistemas de Informação na Unochapecó, onde venho desenvolvendo meus conhecimentos em programação, banco de dados e desenvolvimento de sistemas.<br>
                 Tenho interesse em tecnologia e busco me aprimorar constantemente para me tornar um profissional qualificado na área.
             </p>
         </section>
 
+        <!-- Comentários fictícios -->
         <section id="comentarios">
             <h2>Comentários de visitantes</h2>
             <div class="comentario">
@@ -66,30 +67,16 @@
                 <button type="submit">Enviar</button>
             </form>
 
-            <div id="resultado" style="margin-top:15px;"></div>
+            <div id="resultado"></div>
         </section>
-
-
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>© 2026 Bernardo Teste - Todos os direitos reservados kkk</p>
     </footer>  
 
-    <!-- JS simples para o formulário -->
-    <script>
-        const form = document.getElementById("meuForm");
-        const resultado = document.getElementById("resultado");
-
-        form.addEventListener("submit", function(e){
-            e.preventDefault(); // evita recarregar a página
-            const nome = document.getElementById("nome").value;
-            const mensagem = document.getElementById("mensagem").value;
-            resultado.textContent = `Olá, ${nome}! Sua mensagem foi: "${mensagem}"`;
-            form.reset(); // limpa os campos
-        });
-    </script>
+    <!-- Link para o arquivo JS externo -->
+    <script src="script.js"></script>
 
 </body>
 </html>
